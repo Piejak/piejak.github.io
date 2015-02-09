@@ -29,4 +29,25 @@ a img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+  color: #232020;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #232020;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #232020;
+}
+
+a:active{
+  text-decoration: none;
+  color: #232020;
 }
