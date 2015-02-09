@@ -6,6 +6,8 @@ body{
 
 h1{
   text-align: center;
+  text-decoration: none;
+  color: #232020;
 }
 
 .header{
