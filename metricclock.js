@@ -6,7 +6,7 @@ function displayTime() {
 
   var thisYear = milli - fresh;
 
-  metricMilliThisYear = thisYear / 1.05192;
+  metricMilliThisYear = thisYear / 1.0512;
 
   mweeks = Math.floor(metricMilliThisYear / 1000000000);
 
