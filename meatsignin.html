@@ -26,13 +26,13 @@
               <h3 class="masthead-brand">MeatMeetMeat.com</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active">
+                  <li class="">
                     <a href="meatcover.html">Sign up</a>
                   </li>
-                  <li>
+                  <li class="">
                     <a href="meatabout.html">About</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="meatsignin.html">Sign in</a>
                   </li>
                 </ul>
@@ -40,33 +40,22 @@
             </div>
           </div>
           <div class="inner cover">
-            <h1 class="cover-heading">Sign up</h1>
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">@</span>
-              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            <h1 class="cover-heading">Sign in</h1>
+            <div class="input group">
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
             </div>
             <br>
             <div class="input group">
-              <input type="text" class="form-control" placeholder="Email address" aria-describedby="basic-addon2">
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me">
+                 Remember me
+              </label>
             </div>
-            <br>
-            <div class="input group">
-              <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon3">
-            </div>
-            <br>
-            <div class="input group">
-              <input type="text" class="form-control" placeholder="Confirm password" aria-describedby="basic-addon4">
-            </div>
-            <br>
-            <a class="btn btn-default" href="meathome.html">Submit</a>
-          </div>
-          <div class="mastfoot">
-            <div class="inner">
-              <p>
-                Already have an account?
-                <a href="#">Sign in</a>
-              </p>
-            </div>
+            <a class="btn btn-lg btn-primary btn-block" href="meathome.html">Sign in</a>
           </div>
         </div>
       </div>
