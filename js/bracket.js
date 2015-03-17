@@ -423,7 +423,7 @@ matchup64(24,25,13);
 matchup64(26,27,14);
 matchup64(28,29,15);
 matchup64(30,31,16);
-matchup64(32,33,16);
+matchup64(32,33,17);
 matchup64(34,35,18);
 matchup64(36,37,19);
 matchup64(38,39,20);
