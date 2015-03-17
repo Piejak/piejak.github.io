@@ -496,7 +496,7 @@ console.log(winner);
 function writeWinners(number, winnum){
   console.log('winner' + winnum);
   console.log(roundof32[number].name);
-  //document.getElementById('winner' + winnum).innerHTML = roundof32[number].name;
+  document.getElementById('winner' + winnum).innerHTML = roundof32[number].name;
 }
 
 writeWinners(0, 1);
