@@ -7,7 +7,7 @@ var uk = new Object();
 var ukopp = new Object();
   ukopp.wins = 0;
   ukopp.cc = 0;
-  ukopp.name = "Kentucky";
+  ukopp.name = "Undecided";
   ukopp.cind = Math.random() * (.2) + .9;
 
 var cin = new Object();
@@ -151,7 +151,7 @@ var xav = new Object();
 var xavopp = new Object();
   xavopp.wins = 0;
   xavopp.cc = 0;
-  xavopp.name = "Kentucky";
+  xavopp.name = "Undecided";
   xavopp.cind = Math.random() * (.2) + .9;
 
 var bay = new Object();
@@ -247,7 +247,7 @@ var prov = new Object();
 var provopp = new Object();
   provopp.wins = 0;
   provopp.cc = 0;
-  provopp.name = "Kentucky";
+  provopp.name = "Undecided";
   provopp.cind = Math.random() * (.2) + .9;
 
 var okla = new Object();
@@ -295,7 +295,7 @@ var duke = new Object();
 var dukeopp = new Object();
   dukeopp.wins = 0;
   dukeopp.cc = 0;
-  dukeopp.name = "Kentucky";
+  dukeopp.name = "Undecided";
   dukeopp.cind = Math.random() * (.2) + .9;
 
 var sdsu = new Object();
@@ -395,46 +395,50 @@ winner = [];
 console.log(roundof64);
 console.log(roundof64[0].wins * roundof64[0].cc * roundof64[0].cind);
 
-function matchup64(team1, team2){
+function matchup64(team1, team2, num){
   if(roundof64[team1].wins * roundof64[team1].cc * roundof64[team1].cind > roundof64[team2].wins * roundof64[team2].cc * roundof64[team2].cind){
     roundof32.push(roundof64[team1]);
+    document.getElementById('winner' + num).innerHTML = roundof64[team1].name;
+    document.getElementById('loser' + num).innerHTML = roundof64[team2].name;
   } else{
     roundof32.push(roundof64[team2]);
+    document.getElementById('winner' + num).innerHTML = roundof64[team2].name;
+    document.getElementById('loser' + num).innerHTML = roundof64[team1].name;
   }
 }
 
-matchup64(0,1);
-matchup64(2,3);
-matchup64(4,5);
-matchup64(6,7);
-matchup64(8,9);
-matchup64(10,11);
-matchup64(12,13);
-matchup64(14,15);
-matchup64(16,17);
-matchup64(18,19);
-matchup64(20,21);
-matchup64(22,23);
-matchup64(24,25);
-matchup64(26,27);
-matchup64(28,29);
-matchup64(30,31);
-matchup64(32,33);
-matchup64(34,35);
-matchup64(36,37);
-matchup64(38,39);
-matchup64(40,41);
-matchup64(42,43);
-matchup64(44,45);
-matchup64(46,47);
-matchup64(48,49);
-matchup64(50,51);
-matchup64(52,53);
-matchup64(54,55);
-matchup64(56,57);
-matchup64(58,59);
-matchup64(60,61);
-matchup64(62,63);
+matchup64(0,1,1);
+matchup64(2,3,2);
+matchup64(4,5,3);
+matchup64(6,7,4);
+matchup64(8,9,5);
+matchup64(10,11,6);
+matchup64(12,13,7);
+matchup64(14,15,8);
+matchup64(16,17,9);
+matchup64(18,19,10);
+matchup64(20,21,11);
+matchup64(22,23,12);
+matchup64(24,25,13);
+matchup64(26,27,14);
+matchup64(28,29,15);
+matchup64(30,31,16);
+matchup64(32,33,16);
+matchup64(34,35,18);
+matchup64(36,37,19);
+matchup64(38,39,20);
+matchup64(40,41,21);
+matchup64(42,43,22);
+matchup64(44,45,23);
+matchup64(46,47,24);
+matchup64(48,49,25);
+matchup64(50,51,26);
+matchup64(52,53,27);
+matchup64(54,55,28);
+matchup64(56,57,29);
+matchup64(58,59,30);
+matchup64(60,61,31);
+matchup64(62,63,32);
 
 console.log(roundof32);
 
@@ -492,42 +496,3 @@ matchup(roundof2, 0, 1, winner);
 console.log(winner[0].name);
 
 console.log(winner);
-
-function writeWinners(number, winnum){
-  console.log('winner' + winnum);
-  console.log(roundof32[number].name);
-  document.getElementById('winner' + winnum).innerHTML = roundof32[number].name;
-}
-
-writeWinners(0, 1);
-writeWinners(1, 2);
-writeWinners(2, 3);
-writeWinners(3, 4);
-writeWinners(4, 5);
-writeWinners(5, 6);
-writeWinners(6, 7);
-writeWinners(7, 8);
-writeWinners(8, 9);
-writeWinners(9, 10);
-writeWinners(10, 11);
-writeWinners(11, 12);
-writeWinners(12, 13);
-writeWinners(13, 14);
-writeWinners(14, 15);
-writeWinners(15, 16);
-writeWinners(16, 17);
-writeWinners(17, 18);
-writeWinners(18, 19);
-writeWinners(19, 20);
-writeWinners(20, 21);
-writeWinners(21, 22);
-writeWinners(22, 23);
-writeWinners(23, 24);
-writeWinners(24, 25);
-writeWinners(25, 26);
-writeWinners(26, 27);
-writeWinners(27, 28);
-writeWinners(28, 29);
-writeWinners(29, 30);
-writeWinners(30, 31);
-writeWinners(31, 32);
