@@ -440,59 +440,64 @@ matchup64(58,59,30);
 matchup64(60,61,31);
 matchup64(62,63,32);
 
-console.log(roundof32);
+console.log(roundof32.length);
 
-function matchup(startarray, team1, team2, newarray){
-  if(roundof64[team1].wins * roundof64[team1].cc * roundof64[team1].cind > roundof64[team2].wins * roundof64[team2].cc * roundof64[team2].cind){
+
+function matchup(startarray, team1, team2, newarray, num){
+  if(startarray[team1].wins * startarray[team1].cc * startarray[team1].cind > startarray[team2].wins * startarray[team2].cc * startarray[team2].cind){
     newarray.push(startarray[team1]);
+    document.getElementById('winner' + num).innerHTML = startarray[team1].name;
+    document.getElementById('loser' + num).innerHTML = startarray[team2].name;
   } else{
     newarray.push(startarray[team2]);
+    document.getElementById('winner' + num).innerHTML = startarray[team2].name;
+    document.getElementById('loser' + num).innerHTML = startarray[team1].name;
   }
 }
 
-matchup(roundof32, 0, 1, roundof16);
-matchup(roundof32, 2, 3, roundof16);
-matchup(roundof32, 4, 5, roundof16);
-matchup(roundof32, 6, 7, roundof16);
-matchup(roundof32, 8, 9, roundof16);
-matchup(roundof32, 10, 11, roundof16);
-matchup(roundof32, 12, 13, roundof16);
-matchup(roundof32, 14, 15, roundof16);
-matchup(roundof32, 16, 17, roundof16);
-matchup(roundof32, 18, 19, roundof16);
-matchup(roundof32, 20, 21, roundof16);
-matchup(roundof32, 22, 23, roundof16);
-matchup(roundof32, 24, 25, roundof16);
-matchup(roundof32, 26, 27, roundof16);
-matchup(roundof32, 28, 29, roundof16);
-matchup(roundof32, 30, 31, roundof16);
+matchup(roundof32, 0, 1, roundof16, 33);
+matchup(roundof32, 2, 3, roundof16, 34);
+matchup(roundof32, 4, 5, roundof16, 35);
+matchup(roundof32, 6, 7, roundof16, 36);
+matchup(roundof32, 8, 9, roundof16, 37);
+matchup(roundof32, 10, 11, roundof16, 38);
+matchup(roundof32, 12, 13, roundof16, 39);
+matchup(roundof32, 14, 15, roundof16, 40);
+matchup(roundof32, 16, 17, roundof16, 41);
+matchup(roundof32, 18, 19, roundof16, 42);
+matchup(roundof32, 20, 21, roundof16, 43);
+matchup(roundof32, 22, 23, roundof16, 44);
+matchup(roundof32, 24, 25, roundof16, 45);
+matchup(roundof32, 26, 27, roundof16, 46);
+matchup(roundof32, 28, 29, roundof16, 47);
+matchup(roundof32, 30, 31, roundof16, 48);
 
 console.log(roundof16);
 
-matchup(roundof16, 0, 1, roundof8);
-matchup(roundof16, 2, 3, roundof8);
-matchup(roundof16, 4, 5, roundof8);
-matchup(roundof16, 6, 7, roundof8);
-matchup(roundof16, 8, 9, roundof8);
-matchup(roundof16, 10, 11, roundof8);
-matchup(roundof16, 12, 13, roundof8);
-matchup(roundof16, 14, 15, roundof8);
+matchup(roundof16, 0, 1, roundof8, 49);
+matchup(roundof16, 2, 3, roundof8, 50);
+matchup(roundof16, 4, 5, roundof8, 51);
+matchup(roundof16, 6, 7, roundof8, 52);
+matchup(roundof16, 8, 9, roundof8, 53);
+matchup(roundof16, 10, 11, roundof8, 54);
+matchup(roundof16, 12, 13, roundof8, 55);
+matchup(roundof16, 14, 15, roundof8, 56);
 
 console.log(roundof8);
 
-matchup(roundof8, 0, 1, roundof4);
-matchup(roundof8, 2, 3, roundof4);
-matchup(roundof8, 4, 5, roundof4);
-matchup(roundof8, 6, 7, roundof4);
+matchup(roundof8, 0, 1, roundof4, 57);
+matchup(roundof8, 2, 3, roundof4, 58);
+matchup(roundof8, 4, 5, roundof4, 59);
+matchup(roundof8, 6, 7, roundof4, 60);
 
 console.log(roundof4);
 
-matchup(roundof4, 0, 1, roundof2);
-matchup(roundof4, 2, 3, roundof2);
+matchup(roundof4, 0, 1, roundof2, 61);
+matchup(roundof4, 2, 3, roundof2, 62);
 
 console.log(roundof2);
 
-matchup(roundof2, 0, 1, winner);
+matchup(roundof2, 0, 1, winner, 63);
 console.log(winner[0].name);
 
 console.log(winner);
