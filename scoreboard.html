@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Scoreboard</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/scorestyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="blue-grey" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Scoreboard</a>
+    </div>
+  </nav>
+  <div class="">
+    <div class="row">
+      <div class="col s12 m12 l6 light-blue grey-text text-lighten-5">
+        <h2>Blue Team</h2>
+        <h1 id="blue-score">0</h1>
+        <button class="btn-floating btn-large waves-effect waves-light red lighten-1" onclick="blueteamscore()"><i class="mdi-content-add"></i></button>
+      </div>
+      <div class="col s12 m12 l6 red lighten-1 grey-text text-lighten-5">
+        <h2>Red Team</h2>
+        <h1 id="red-score">0</h1>
+        <button class="btn-floating btn-large waves-effect waves-light light-blue" onclick="redteamscore()"><i class="mdi-content-add"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="js/scoreboard.js"
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
