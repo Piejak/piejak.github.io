@@ -10,13 +10,12 @@
   padding: 0 15px;
 }
 
-.row {
-  text-align: center;
-}
-h1 {
-  font-size: 6em;
-}
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%; }
 
-.write {
-  font-size: 30px;
+.brand-logo {
+  position: relative;
 }
