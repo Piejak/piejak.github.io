@@ -1,21 +1,18 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-.icon-block {
-  padding: 0 15px;
+.panel {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 400px;
+  color: #ecf0f1;
 }
 
-.container {
-  padding: 0 1.5rem;
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%; }
+.blue {
+  background-color: #3498db;
+}
 
-.brand-logo {
-  position: relative;
+.turquoise {
+  background-color: #1abc9c;
+}
+
+.green {
+  background-color: #2ecc71;
 }

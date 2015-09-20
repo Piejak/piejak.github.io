@@ -7,7 +7,7 @@
 
   <!-- CSS  -->
   <link href="css/bootstrap1.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!-- <link href="css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -38,28 +38,41 @@
 
   <div class="container">
     <img src="img/senior_pic_cropped.JPG" alt="A picture of me" class="img-circle" width="200dp">
-    <h1>
-      Hi there!
-    </h1>
-    <p>
-      I'm Brian Piejak, a first year computer science student at the Georgia Institute of Technology. It appears you've stumbled upon my personal website. Please have a look around!
-    </p>
-    <br><br>
-    <h1>
-      What I'm About
-    </h1>
-    <p>
-      I taught myself to code in high school through a wide variety of resources and languages. I found a great deal of 
-    <h1>
-      When Should I Post?
-    </h1>
-
+    <section class="panel blue">
+      <h1>
+        Hi there!
+      </h1>
+      <p>
+        I'm Brian Piejak, a first year computer science student at the Georgia Institute of Technology. It appears you've stumbled upon my personal website. Please have a look around!
+      </p>
+    </section>
+    <section class="panel turquoise">
+      <h1>
+        What I'm About
+      </h1>
+      <p>
+        I taught myself to code in high school through a wide variety of resources and languages. I
+      </p>
+    </section>
+    <section class="panel green">
+      <h1>
+        Featured Project
+      </h1>
+      <h3>
+        <a href="http://piejak.github.io/When-Should-I-Post/">When Should I Post?</a>
+      </h3>
+      <p>
+        This is a web app that takes advantage of Instagram's API to show users several different statistics about the likes their photos get. This information is delivered in the form of graphs that are generated using Chartist.js.
+      </p>
+    </section>
   </div>
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/scroll.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
