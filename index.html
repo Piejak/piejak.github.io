@@ -8,9 +8,11 @@
 
   <!-- CSS  -->
   <link href="css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <ling rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-  <nav>
+  <nav id="primary-nav">
     <ul class="nav">
       <li class="home"><a href="#top">Home</a></li>
       <li class="about"><a href="#about">About</a></li>
@@ -19,14 +21,6 @@
       <li class="contact"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <!--<div id="headline">
-    <div class="container">
-      <header>
-        <h1>Brian Piejak Test Site</h1>
-        <p>Building a responsive website froms scratch</p>
-      </header>
-    </div>
-  </div> -->
     <img src="img/senior_pic_cropped.JPG" alt="A picture of me" class="img-circle" id="top" width="200dp">
     <h1>Brian Piejak</h1>
     <p class="info-line">4010 Caddie Dr.  | Acworth, GA, 30101 | 404-279-0954 | <a href="mailto:BrianPiejak@gatech.edu?Subject=Portfolio%20Contact" target="_top">BrianPiejak@gatech.edu</a> | <a href="https://www.linkedin.com/in/brianpiejak">linkedin.com/in/brianpiejak</a></p>
@@ -55,17 +49,28 @@
         </p>
       </div>
     </section>
+    <section class="panel navy" id="other-projects">
+      <h1>Projects</h1>
+      <h3><a href="https://piejak.github.io" class="project-link">This Website</a></h3>
+      <div class="container">
+        <p>That's right, you're already looking at my most recent project! I built this site from scratch using HTML and CSS. It was my first time building a responsive website without a framework. I used ScrollMagic.js to help with the scrolling effects.</p>
+      </div>
+      <h3><a href="https://github.com/Piejak/GeoQuiz-App" class="">GeoQuiz App</a></h3>
+      <div class="container">
+        <p>An Android app that asks the user trivia questions about geography and allows them to answer true or false. There is also an option to cheat and see the answer. Upon selecting an answer, a toast pops up informing the user whether or not they were correct.</p>
+      </div>
+    </section>
     <section class="panel red" id="resume">
       <h1>Resume</h1>
       <div class="container">
-        <p>You can download my resume by clicking below</p>
-        <a href=""><img src="img/resume.png" alt="resume image" width="300dp"></a>
+        <p>You can view my resume by clicking below</p>
+        <a href="res/Piejak_Resume.pdf"><img src="img/resume.png" alt="resume image" width="300dp"></a>
       </div>
     </section>
     <section class="panel purple" id="contact">
       <h1>Contact Me</h1>
       <div class="container">
-        <a href="mailto:Brian.Piejak@gatech.edu?Subject=Portfolio%20Contact" target="_top">Send me an email!</a>
+        <p class="inline-link">To send me an email, click <a href="mailto:Brian.Piejak@gatech.edu?Subject=Portfolio%20Contact" target="_top" class="">here</a></p>
       </div>
     </section>
 
