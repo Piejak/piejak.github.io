@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Brian Piejak</title>
 
   <!-- CSS  -->
-  <link href="css/bootstrap1.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!-- <link href="css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <ling rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Brian Piejak</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+  <nav id="primary-nav">
+    <ul class="nav">
+      <li class="home"><a href="#top">Home</a></li>
+      <li class="about"><a href="#about">About</a></li>
+      <li class="projects"><a href="#projects">Projects</a></li>
+      <li class="resume"><a href="#resume">Resume</a></li>
+      <li class="contact"><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-
-  <div class="container">
-    <img src="img/senior_pic_cropped.JPG" alt="A picture of me" class="img-circle" width="200dp">
-    <h1>
-      Hi there!
-    </h1>
-    <p>
-      I'm Brian Piejak, a first year computer science student at the Georgia Institute of Technology. It appears you've stumbled upon my personal website. Please have a look around!
-    </p>
-    <br><br>
-    <h1>
-      What I'm About
-    </h1>
-    <p>
-      I taught myself to code in high school through a wide variety of resources and languages. I found a great deal of 
-    <h1>
-      When Should I Post?
-    </h1>
-
-  </div>
+    <img src="img/senior_pic_cropped.JPG" alt="A picture of me" class="img-circle" id="top" width="200dp">
+    <h1>Brian Piejak</h1>
+    <p class="info-line">4010 Caddie Dr.  | Acworth, GA, 30101 | 404-279-0954 | <a href="mailto:BrianPiejak@gatech.edu?Subject=Portfolio%20Contact" target="_top">BrianPiejak@gatech.edu</a> | <a href="https://www.linkedin.com/in/brianpiejak">linkedin.com/in/brianpiejak</a></p>
+    <section class="panel blue" id="about">
+      <h1>
+        Hi there!
+      </h1>
+      <div class="container">
+        <p>
+          I'm Brian Piejak, a first year computer science student at the Georgia Institute of Technology. It appears you've stumbled upon my personal website. Let me tell you a little bit abot myself. I taught myself to code in high school through a wide variety of resources and languages. I found particular interest in web development. I am currently focusing on developing for android, and working on data structures and algorithms in python.
+        </p>
+      </div>
+    </section>
+    <section class="panel turquoise" id="projects">
+      <h1>
+        Featured Project
+      </h1>
+      <h3>
+        <a class="project-link" href="http://piejak.github.io/When-Should-I-Post/">When Should I Post?</a>
+      </h3>
+      <img src="img/when_should_i_post_1.png" alt="example pic 1" width="300dp">
+      <img src="img/when_should_i_post_2.png" alt="example pic 2" width="300dp">
+      <div class="container">
+        <p>
+          This is a web app that takes advantage of Instagram's API to show users several different statistics about the likes their photos get. This information is delivered in the form of graphs that are generated using Chartist.js.
+        </p>
+      </div>
+    </section>
+    <section class="panel navy" id="other-projects">
+      <h1>Projects</h1>
+      <h3><a href="https://piejak.github.io" class="project-link">This Website</a></h3>
+      <div class="container">
+        <p>That's right, you're already looking at my most recent project! I built this site from scratch using HTML and CSS. It was my first time building a responsive website without a framework. I used ScrollMagic.js to help with the scrolling effects.</p>
+      </div>
+      <h3><a href="https://github.com/Piejak/GeoQuiz-App" class="">GeoQuiz App</a></h3>
+      <div class="container">
+        <p>An Android app that asks the user trivia questions about geography and allows them to answer true or false. There is also an option to cheat and see the answer. Upon selecting an answer, a toast pops up informing the user whether or not they were correct.</p>
+      </div>
+    </section>
+    <section class="panel red" id="resume">
+      <h1>Resume</h1>
+      <div class="container">
+        <p>You can view my resume by clicking below</p>
+        <a href="res/Piejak_Resume.pdf"><img src="img/resume.png" alt="resume image" width="300dp"></a>
+      </div>
+    </section>
+    <section class="panel purple" id="contact">
+      <h1>Contact Me</h1>
+      <div class="container">
+        <p class="inline-link">To send me an email, click <a href="mailto:Brian.Piejak@gatech.edu?Subject=Portfolio%20Contact" target="_top" class="">here</a></p>
+      </div>
+    </section>
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/init.js"></script>
+  <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="js/scroll.js"></script>
 
   </body>
 </html>
