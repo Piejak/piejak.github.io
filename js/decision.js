@@ -3,7 +3,7 @@ var randomconvos = ["image1.png", "image2.png", "image3.png", "image4.png", "ima
 function getRandomConvo(comAr){
   var num = Math.floor(Math.random() * comAr.length);
   var img = comAr[num];
-  var imgStr = '<img src="' + img + '" alt = "something went wrong">';
+  var imgStr = '<img src="img/' + img + '" alt = "something went wrong">';
   document.write(imgStr); document.close();
 }
 
@@ -12,6 +12,6 @@ var randomdates = ["date1.png", "date2.png", "date3.png", "date4.png", "date5.pn
 function getRandomDate(dateAr){
   var number = Math.floor(Math.random() * dateAr.length);
   var image = dateAr[number];
-  var imageStr = '<img src="' + image + '" alt = "something went wrong">';
+  var imageStr = '<img src="img/' + image + '" alt = "something went wrong">';
   document.write(imageStr); document.close();
 }
