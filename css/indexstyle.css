@@ -143,6 +143,11 @@ nav li{
   text-decoration: underline !important;
 }
 
+.project-link a:active {
+  padding: 50px;
+  display: inline-block;
+}
+
 @media screen and (min-width: 600px) {
   nav li {
     width: 120px;
