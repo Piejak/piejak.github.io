@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Brian Piejak | Daily Programmer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/zenburn.css">
+    <script src="highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Daily Programmer
+                    </a>
+                </li>
+                <li>
+                    <a href="easy.html">Easy</a>
+                </li>
+                <li>
+                    <a href="intermediate.html">Intermediate</a>
+                </li>
+                <li>
+                    <a href="hard.html">Hard</a>
+                </li>
+                <li>
+                  <a href="http://piejak.github.io">Back to main site</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <a href="#menu-toggle" class="box-shadow-menu" id="menu-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                      </a>
+                      <h1>Easy 7</h1>
+
+                      <p>The problem can be found <a href="https://www.reddit.com/r/dailyprogrammer/comments/pr2xr/2152012_challenge_7_easy/"> here </a></p>
+
+                      <h2>Python</h2>
+
+                      <pre><code class="python">
+                        def translateFromMorse(in_string):
+                          trans_dict = {'/': ' ', '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--.': 'G',
+                                        '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N', '---': 'O',
+                                        '.--.': 'P', '--.-': 'Q', '.-.': 'R', '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W',
+                                        '-..-': 'X', '-.--': 'Y', '--..': 'Z', '-----': '0', '.----': '1', '..--': '2', '...--': '3',
+                                        '....-': '4', '.....': '5', '-....': '6', '--...': '7', '---..': '8', '----.': '9', '.-.-.-': '.',
+                                        '--..--': ',', '---...': ':', '..--..': '?', '.----.': "'", '-....-': '-', '-..-.': '/', '.-..-.': '"'
+                                        , '.--.-.': '@', '-...-': '=', '-.--.-': '('}
+                          out_string = ""
+                          open_parentheses = False
+                          letters = in_string.split()
+                          for letter in letters:
+                              try:
+                                  if letter == '-.--.-' and not open_parentheses:
+                                      out_string += trans_dict[letter]
+                                      open_parentheses = True
+                                  elif letter == '-.--.-' and open_parentheses:
+                                      out_string += ')'
+                                  else:
+                                      out_string += trans_dict[letter]
+                              except KeyError:
+                                  return "There was some invalid morse code in your input, try again."
+
+                          return out_string
+
+                      def translateToMorse(in_string):
+                          trans_dict = {'/': '-..-.', '=': '-...-', '3': '...--', 'Z': '--..', '1': '.----', 'X': '-..-', 'I': '..',
+                                        'O': '---', 'R': '.-.', 'N': '-.', '9': '----.', '2': '..--', 'G': '--.', '@': '.--.-.', '0': '-----',
+                                        'H': '....', '(': '-.--.-', 'U': '..-', "'": '.----.', 'Y': '-.--', 'K': '-.-', 'A': '.-',
+                                        'L': '.-..', 'F': '..-.', '8': '---..', 'E': '.', 'M': '--', '5': '.....', 'T': '-', 'P': '.--.',
+                                        '-': '-....-', '.': '.-.-.-', 'S': '...', '4': '....-', '7': '--...', ':': '---...', 'D': '-..',
+                                        '?': '..--..', 'B': '-...', 'W': '.--', '"': '.-..-.', 'Q': '--.-', 'C': '-.-.', '6': '-....',
+                                        ',': '--..--', 'J': '.---', 'V': '...-', ' ': '/', ')': '-.--.-'}
+                          out_string = ""
+                          for letter in in_string:
+                              try:
+                                  out_string += trans_dict[letter.upper()] + ' '
+                              except KeyError:
+                                  return letter + ' could not be translated into morse code. Try again'
+
+                          return out_string
+
+
+                      def main():
+                          keep_running = True
+                          while keep_running:
+                              x = input('1. translate from letters to morse code \n2. translate from morse code to letters \nQ. quit\n')
+                              if x.strip() == '1':
+                                  print('Translating from letters to morse')
+                                  print(translateToMorse(input('Enter a string of characters \n')))
+                              elif x.strip() == '2':
+                                  print('Translating from morse to letters')
+                                  print(translateFromMorse(input('Enter a string of morse \n')))
+                              elif x.strip().lower() == 'q':
+                                  keep_running = False
+                              else:
+                                  print('Invalid input, try again')
+
+                      if __name__ == '__main__':
+                          main()
+
+                      </code></pre>
+
+                      <a href="easy.html">Back to list</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
