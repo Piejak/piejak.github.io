@@ -136,6 +136,153 @@
 
                       </code></pre>
 
+                      <h2>Java</h2>
+
+                      <pre><code class="java">
+
+                        import java.util.HashMap;
+
+                        /**
+                         * Created by Brian on 12/11/2015.
+                         */
+                        public class Morse {
+
+                            protected static HashMap<String, String> transToMorseHM(){
+                                final HashMap<String, String> transToMorseHM = new HashMap<>();
+                                transToMorseHM.put("6", "-....");
+                                transToMorseHM.put("B", "-...");
+                                transToMorseHM.put("3", "...--");
+                                transToMorseHM.put("7", "--...");
+                                transToMorseHM.put("N", "-.");
+                                transToMorseHM.put("V", "...-");
+                                transToMorseHM.put(":", "---...");
+                                transToMorseHM.put("\"", ".-..-.");
+                                transToMorseHM.put("M", "--");
+                                transToMorseHM.put("'", ".----.");
+                                transToMorseHM.put("Y", "-.--");
+                                transToMorseHM.put("S", "...");
+                                transToMorseHM.put("?", "..--..");
+                                transToMorseHM.put("K", "-.-");
+                                transToMorseHM.put(",", "--..--");
+                                transToMorseHM.put("R", ".-.");
+                                transToMorseHM.put("C", "-.-.");
+                                transToMorseHM.put("P", ".--.");
+                                transToMorseHM.put(".", ".-.-.-");
+                                transToMorseHM.put("H", "....");
+                                transToMorseHM.put(")", "-.--.-");
+                                transToMorseHM.put("D", "-..");
+                                transToMorseHM.put("G", "--.");
+                                transToMorseHM.put("(", "-.--.-");
+                                transToMorseHM.put("Z", "--..");
+                                transToMorseHM.put("E", ".");
+                                transToMorseHM.put("J", ".---");
+                                transToMorseHM.put("T", "-");
+                                transToMorseHM.put("9", "----.");
+                                transToMorseHM.put("8", "---..");
+                                transToMorseHM.put("=", "-...-");
+                                transToMorseHM.put("I", "..");
+                                transToMorseHM.put("-", "-....-");
+                                transToMorseHM.put("F", "..-.");
+                                transToMorseHM.put("/", "-..-.");
+                                transToMorseHM.put(" ", "/");
+                                transToMorseHM.put("4", "....-");
+                                transToMorseHM.put("5", ".....");
+                                transToMorseHM.put("A", ".-");
+                                transToMorseHM.put("X", "-..-");
+                                transToMorseHM.put("1", ".----");
+                                transToMorseHM.put("Q", "--.-");
+                                transToMorseHM.put("2", "..--");
+                                transToMorseHM.put("U", "..-");
+                                transToMorseHM.put("O", "---");
+                                transToMorseHM.put("@", ".--.-.");
+                                transToMorseHM.put("L", ".-..");
+                                transToMorseHM.put("0", "-----");
+                                transToMorseHM.put("W", ".--");
+
+                                return transToMorseHM;
+                            }
+
+                            protected static HashMap<String, String> transFromMorseHM(){
+                                final HashMap<String, String> transFromMorseHM = new HashMap<>();
+                                transFromMorseHM.put("..--..", "?");
+                                transFromMorseHM.put("...-", "V");
+                                transFromMorseHM.put("-....", "6");
+                                transFromMorseHM.put("--..--", ",");
+                                transFromMorseHM.put("---..", "8");
+                                transFromMorseHM.put("....", "H");
+                                transFromMorseHM.put(".---", "J");
+                                transFromMorseHM.put("--.-", "Q");
+                                transFromMorseHM.put("..--", "2");
+                                transFromMorseHM.put("..", "I");
+                                transFromMorseHM.put("-.", "N");
+                                transFromMorseHM.put("-...-", "=");
+                                transFromMorseHM.put(".----.", "'");
+                                transFromMorseHM.put("-.-", "K");
+                                transFromMorseHM.put("--...", "7");
+                                transFromMorseHM.put("...--", "3");
+                                transFromMorseHM.put("-.--", "Y");
+                                transFromMorseHM.put(".-", "A");
+                                transFromMorseHM.put("-", "T");
+                                transFromMorseHM.put("..-.", "F");
+                                transFromMorseHM.put("-..-.", "/");
+                                transFromMorseHM.put(".----", "1");
+                                transFromMorseHM.put("----.", "9");
+                                transFromMorseHM.put(".", "E");
+                                transFromMorseHM.put("....-", "4");
+                                transFromMorseHM.put(".-.", "R");
+                                transFromMorseHM.put(".-..", "L");
+                                transFromMorseHM.put("--", "M");
+                                transFromMorseHM.put("-.--.-", "(");
+                                transFromMorseHM.put("..-", "U");
+                                transFromMorseHM.put("--..", "Z");
+                                transFromMorseHM.put(".--.-.", "@");
+                                transFromMorseHM.put("/", " ");
+                                transFromMorseHM.put("...", "S");
+                                transFromMorseHM.put("---", "O");
+                                transFromMorseHM.put("-...", "B");
+                                transFromMorseHM.put(".....", "5");
+                                transFromMorseHM.put(".-..-.", "\"");
+                                transFromMorseHM.put("-..-", "X");
+                                transFromMorseHM.put("---...", ":");
+                                transFromMorseHM.put("-----", "0");
+                                transFromMorseHM.put(".--.", "P");
+                                transFromMorseHM.put("-....-", "-");
+                                transFromMorseHM.put("-.-.", "C");
+                                transFromMorseHM.put("-..", "D");
+                                transFromMorseHM.put("--.", "G");
+                                transFromMorseHM.put(".--", "W");
+                                transFromMorseHM.put(".-.-.-", ".");
+
+                                return transFromMorseHM;
+                            }
+
+                            public static String translateFromMorse(String inString){
+                                HashMap<String, String> transFromMorseHM = transFromMorseHM();
+                                String outString = "";
+                                String letterBuffer = "";
+                                for(int i = 0; i < inString.length(); i++){
+                                    if(inString.charAt(i) == ' '){
+                                        outString += transFromMorseHM.get(letterBuffer);
+                                        letterBuffer = "";
+                                    } else{
+                                        letterBuffer += inString.charAt(i);
+                                    }
+                                }
+                                outString += transFromMorseHM.get(letterBuffer);
+
+                                return outString;
+                            }
+
+                            public static void main(String [] args){
+                                String inText = ".... . .-.. .-.. --- / -.. .- .. .-.. -.-- / .--. .-. --- --. .-. .- -- -- . .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .- .-.. .-.. . -. --. . ... / - --- -.. .- -.--";
+                                String translation = translateFromMorse(inText);
+                                System.out.println(translation);
+                            }
+                        }
+
+
+                      </code></pre>
+
                       <a href="easy.html">Back to list</a>
 
                     </div>
