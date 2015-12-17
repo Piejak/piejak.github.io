@@ -16,6 +16,9 @@
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/zenburn.css">
+    <script src="highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +41,7 @@
                         Daily Programmer
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="easy.html">Easy</a>
                 </li>
                 <li>
@@ -63,18 +66,23 @@
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                       </a>
-                        <h1>Easy</h1>
+                      <h1>Easy 22</h1>
 
-                        <ul>
-                          <li><a href="easy_1.html">Easy 1 (C++)</a></li>
-                          <li><a href="easy_3.html">Easy 3 (C++)</a></li>
-                          <li><a href="easy_7.html">Easy 7 (Python, Java)</a></li>
-                          <li><a href="easy_13.html">Easy 13 (Python)</a></li>
-                          <li><a href="easy_22.html">Easy 22 (Python)</a></li>
-                          <li><a href="easy_145.html">Easy 145 (Python)</a></li>
-                          <li><a href="easy_149.html">Easy 149 (Python)</a></li>
-                        </ul>
-                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                      <p>The problem can be found <a href="https://www.reddit.com/r/dailyprogrammer/comments/qr0hg/3102012_challenge_22_easy/"> here </a></p>
+
+                      <h2>Python</h2>
+
+                      <pre><code class="python">
+                        def compare(listA, listB):
+                          for element in listB:
+                              if element not in listA:
+                                  listA.append(element)
+
+                          return listA
+                      </code></pre>
+
+                      <a href="easy.html">Back to list</a>
+
                     </div>
                 </div>
             </div>
