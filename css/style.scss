@@ -1,0 +1,32 @@
+@import "reset"
+
+$font-stack: sans-serif;
+$primary-color: #000;
+
+body {
+  font: 100% $font-stack;
+}
+
+.panel {
+  height: 100vh;
+}
+
+.panel1 {
+  @extend .panel;
+  background-color: red;
+}
+
+.panel2 {
+  @extend .panel;
+  background-color: blue;
+}
+
+.panel3 {
+  @extend .panel;
+  background-color: green;
+}
+
+.panel4 {
+  @extend .panel;
+  background-color: yellow;
+}
