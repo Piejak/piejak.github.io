@@ -41,7 +41,7 @@ p {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     color: white;
-    opacity: 0.3; }
+    animation: fade 3s infinite; }
 
 .panel2 {
   background-color: #27AE60;
@@ -52,5 +52,13 @@ p {
 
 .panel4 {
   background-color: #E74C3C; }
+
+@keyframes fade {
+  0% {
+    opacity: 0.75; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 0.75; } }
 
 /*# sourceMappingURL=style.css.map */

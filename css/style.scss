@@ -54,7 +54,7 @@ p {
     //opera
     -o-transform: rotate(-90deg);
     color: $font-color;
-    opacity: 0.3;
+    animation: fade 3s infinite;
   }
 }
 
@@ -72,4 +72,16 @@ p {
 .panel4 {
   @extend .panel;
   background-color: $panel4-color;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.75;
+  }
 }
