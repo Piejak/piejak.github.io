@@ -8,6 +8,10 @@ body {
   font-size: 0;
 }
 
+p {
+  padding: 20px;
+}
+
 .panel {
   height: 100vh;
   width: 100vw;
@@ -17,6 +21,25 @@ body {
 .panel1 {
   @extend .panel;
   background-color: red;
+  p {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+  }
+  .center {
+    padding-top: 50vh;
+    padding-bottom: 40vh;
+  }
+  .arrow {
+    //safari
+    -webkit-transform: rotate(-90deg);
+    //firefox
+    -moz-transform: rotate(-90deg);
+    //IE
+    -ms-transform: rotate(-90deg);
+    //opera
+    -o-transform: rotate(-90deg);
+  }
 }
 
 .panel2 {
