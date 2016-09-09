@@ -40,8 +40,8 @@ p {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    text-decoration: none;
-    color: white; }
+    color: white;
+    opacity: 0.3; }
 
 .panel2 {
   background-color: #27AE60;

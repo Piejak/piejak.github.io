@@ -53,9 +53,8 @@ p {
     -ms-transform: rotate(-90deg);
     //opera
     -o-transform: rotate(-90deg);
-
-    text-decoration: none;
     color: $font-color;
+    opacity: 0.3;
   }
 }
 
