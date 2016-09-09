@@ -11,7 +11,8 @@ body {
   font-size: 0; }
 
 p {
-  padding: 20px; }
+  padding: 20px;
+  color: white; }
 
 .panel, .panel1, .panel2, .panel3, .panel4 {
   height: 100vh;
@@ -19,27 +20,37 @@ p {
   font-size: 16px; }
 
 .panel1 {
-  background-color: red; }
+  background-color: #63393E; }
   .panel1 p {
     text-align: center;
     color: white;
     font-size: 36px; }
   .panel1 .center {
     padding-top: 50vh;
-    padding-bottom: 40vh; }
+    padding-bottom: 33vh; }
+  .panel1 a,
+  .panel1 a:link,
+  .panel1 a:hover,
+  .panel1 a:visited,
+  .panel1 a:active {
+    text-decoration: none;
+    color: white; }
   .panel1 .arrow {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg); }
+    -o-transform: rotate(-90deg);
+    text-decoration: none;
+    color: white; }
 
 .panel2 {
-  background-color: blue; }
+  background-color: #27AE60;
+  color: white; }
 
 .panel3 {
-  background-color: green; }
+  background-color: #6797A1; }
 
 .panel4 {
-  background-color: yellow; }
+  background-color: #E74C3C; }
 
 /*# sourceMappingURL=style.css.map */
