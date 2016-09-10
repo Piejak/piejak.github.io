@@ -17,7 +17,7 @@ p {
 .panel, .panel1, .panel2, .panel3, .panel4 {
   height: 100vh;
   width: 100vw;
-  font-size: 16px; }
+  font-size: 20px; }
 
 .panel1 {
   background-color: #63393E; }
@@ -53,6 +53,31 @@ p {
 .panel4 {
   background-color: #E74C3C; }
 
+.social {
+  text-align: center;
+  padding-top: 10%; }
+  .social li {
+    display: inline;
+    list-style-type: none; }
+  .social img {
+    width: 18%;
+    float: none; }
+  .social a,
+  .social a:link,
+  .social a:hover,
+  .social a:visited,
+  .social a:active {
+    text-decoration: none; }
+
+#me {
+  width: 95%;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto; }
+
+#2 {
+  display: block; }
+
 @keyframes fade {
   0% {
     opacity: 0.75; }
@@ -60,5 +85,20 @@ p {
     opacity: 0.25; }
   100% {
     opacity: 0.75; } }
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    width: 650px; }
+
+  #me {
+    float: right;
+    width: 40%;
+    padding-right: 15px;
+    margin-top: 10%; }
+
+  #left-text {
+    float: left;
+    padding-top: 40vh;
+    padding-left: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
