@@ -3,7 +3,6 @@
 $font-stack: sans-serif;
 $primary-color: #000;
 $font-color: white;
-$panel1-color: #63393E;
 $panel2-color: #27AE60;
 $panel3-color: #6797A1;
 $panel4-color: #E74C3C;
@@ -26,7 +25,12 @@ p {
 
 .panel1 {
   @extend .panel;
-  background-color: $panel1-color;
+
+
+  background: #B993D6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #B993D6 , #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #B993D6 , #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   p {
     text-align: center;
     color: $font-color;
@@ -60,18 +64,27 @@ p {
 
 .panel2 {
   @extend .panel;
-  background-color: $panel2-color;
-  color: $font-color;
+  
+  background: #4CB8C4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CB8C4 , #3CD3AD); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CB8C4 , #3CD3AD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .panel3 {
   @extend .panel;
-  background-color: $panel3-color;
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .panel4 {
   @extend .panel;
-  background-color: $panel4-color;
+
+  background: #f857a6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f857a6 , #ff5858); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f857a6 , #ff5858); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .social {

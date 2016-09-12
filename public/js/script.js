@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var greetings = ["bonjour", "こんにちは", "ciao", "hola", "hello"];
+  var greetings = ["bonjour", "ciao", "hola", "hello"];
   var $text = $("#change");
   var delay = 1.5; // seconds
 
