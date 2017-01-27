@@ -4,6 +4,7 @@ $font-stack: menlo, 'PT Mono', monospace;
 $primary-color: #233B6E;
 $font-color: #EFF0F4;
 $accent-color: #ED5485;
+$link-color: #FCE38A;
 
 .container {
   color: $font-color;
@@ -43,7 +44,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: $accent-color;
+  color: $link-color;
   text-decoration: none;
 }
 
