@@ -1,3 +1,3 @@
-# [Personal Website](https://piejak.github.io/)
+# [Personal Website](https://bpiejak.com/)
 
-The repository that hosts my personal website, as well as a couple of minor projects.
+The repository that hosts my personal website.
